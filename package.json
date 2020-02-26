@@ -1,0 +1,28 @@
+{
+  "name": "props-and-state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmad-Sawalqeh/props-and-state.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmad-Sawalqeh/props-and-state/issues"
+  },
+  "homepage": "https://github.com/Ahmad-Sawalqeh/props-and-state#readme",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
