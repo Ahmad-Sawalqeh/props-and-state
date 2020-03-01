@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   handleUpdate= (data) => {
-    let results = data ;
+    let results = data;
     this.setState({ results, });
   }
 
