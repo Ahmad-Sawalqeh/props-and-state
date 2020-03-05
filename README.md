@@ -1,12 +1,12 @@
-# props-and-state
+# routing-and-component
 
-# LAB - Class 28
+# LAB - Class 29 & 30
 
 ### Author: Ahmad Sawalqeh
 
 ### Links and Resources
 
-- [submission PR](https://github.com/Ahmad-Sawalqeh/props-and-state/pull/1)
+- [submission PR](https://github.com/Ahmad-Sawalqeh/props-and-state/pull/2)
 - [Deploy React App](https://ahmad-sawalqeh.github.io/props-and-state/)
 - [Javascript Tests](https://github.com/Ahmad-Sawalqeh/props-and-state/runs/478295566?check_suite_focus=true)
 

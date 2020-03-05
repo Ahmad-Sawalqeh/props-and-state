@@ -7,9 +7,9 @@ class Results extends Component {
 
   render() {
     return(
-      <main>
+      <>
         <ReactJson src={this.props.results} />
-      </main>
+      </>
     );
   }
 

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-// import superagent from 'superagent';
+import { trackPromise } from 'react-promise-tracker';
+
 import './form.scss';
 
 class Form extends Component {
@@ -10,12 +11,12 @@ class Form extends Component {
     this.state = {
       apiUrl: '',
       method: 'get',
+      loading: false,
     };
   }
 
   handleMethod = (e) => {
     let method = e.target.value;
-    // console.log('method => ',method);
     this.setState({ method, });
   }
 
@@ -26,23 +27,20 @@ class Form extends Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-    let response = await fetch(this.state.apiUrl);
-    let data = await response.json();
-    this.props.update(data);
+    this.setState({ loading: true, });
+    // console.log('Form loading 1 => ' , this.state.loading);
+    this.props.loadingState(true);
+    let data = await trackPromise( fetch(this.state.apiUrl)
+      .then(result => {
+        this.setState({
+          loading: false,
+        });
+        return result.json();
+      })
+    );
+    this.props.loadingState(false);
+    this.props.update(data, this.state.apiUrl,);
   }
-
-  // handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if(this.state.method === 'get'){
-  //     superagent
-  //       .get(this.state.apiUrl)
-  //       .then(data => {
-  //         // let readableData = data.json();
-  //         // this.props.update(readableData);
-  //         this.props.update(data.json());
-  //       });
-  //   }
-  // }
 
   render() {
     return (

@@ -1,0 +1,47 @@
+li{
+  margin: 20px 0 10px 20px;
+  font-size: 20px;
+  list-style-type: decimal;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #2D5986;
+}
+
+.onlyhistoryA{
+  text-decoration: none;
+  border: 0;
+  // width: 80px;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 0 5px;
+  color: white;
+  background-color: #2D5986;
+  transition: .3s;
+  float: right;
+
+  &:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #2D5986;
+    background-color: white;
+  }
+}
+
+.onlyhistoryB{
+  border: 0;
+  // width: 80px;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 0 5px;
+  color: white;
+  background-color: #2D5986;
+  transition: .3s;
+  float: right;
+
+  &:hover{
+    cursor: pointer;
+    color: #2D5986;
+    background-color: white;
+  }
+}
